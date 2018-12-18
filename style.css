@@ -1,0 +1,448 @@
+/*
+  Theme Name: Name - Rocket HTML Template
+  Author: Debu Biswas
+  Support: debu.kumer@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. header-area
+3. about-area
+4. video-area
+5. services-area
+6. skills-area
+7. counter-area
+8. portfolio-area
+9. team-area
+10. slider-area
+11. blog-area
+12. form-area
+13. footer-area
+----------------------------------- 
+*/
+
+
+
+/* 1. Theme default css starts */
+body{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	text-decoration: none;
+	
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+/* 1. Theme default css ends */
+
+/* ==========preloader-area starts========== */
+body.preloader-active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    overflow: hidden;
+}
+.preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+}
+.preloader-spinner {
+    background: url(images/preloader.gif) no-repeat center center;
+    width: 100px;
+    height: 100px;
+    left: 46%;
+    top: 40%;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    position: absolute;
+}
+
+/* ==========preloader-area ends========== */
+
+/* ==========header-area starts========== */
+html,body {
+	width: 100%; 
+	height: 100%;
+}
+.header-area {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+}
+.sticky {
+	position: fixed;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid #444;
+}
+.header-area:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #393838;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+	z-index: -1;
+	clear: both;
+	display: block;
+}
+.menu ul li a {
+	color: #FFFFFF !important;
+}
+.navbar-toggler i {
+	color: white;
+	background: black;
+	padding: 4px;
+	border: none;
+}
+.header-bg {
+	background: url('images/header-bg.jpg') no-repeat scroll 0 0 / cover;
+	height: 100%;
+	position: relative;
+	z-index: 0;
+	
+}
+.header-bg:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #252525;
+	opacity: 0.45;
+	z-index: -1;
+}
+
+.row ,.col-lg-12{
+	width: 100%;
+	height: 100%;
+}
+.hero-content{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.tablecell-content{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	
+}
+
+
+
+
+
+/* ==========header-area ends========== */
+
+/* ==========skill-area starts========== */
+.skills-area h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.skills-area h2:before{
+	content:'';
+	background: red;
+	height: 2px;
+	width: 156px;
+	position: absolute;
+	top: 100%;
+	left:50%;
+	margin-left: -78px;
+	margin-top: 10px;
+}
+.skills-area h2:after{
+	content:'';
+	background: red;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	position: absolute;
+	top: 100%;
+	left:50%;
+	margin-left: -8px;
+	margin-top: 3px;
+}
+.skills-area span{
+	color: #FF0000;
+}
+.skills-area{
+	background: #f3f3f3;
+	overflow: hidden;
+	padding: 70px 0px;
+}
+.skills{
+	margin-top: 70px;
+}
+.skills .skill-lt h3{
+	font-family: Raleway;
+	color: #151515;
+	font-size: 26px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	
+}
+.skills .skill-lt p{
+	font-family: Raleway;
+	color: #515151;
+	font-size: 18px;
+	line-height: 26px;
+}
+.skills .skill-lt p:last-child{
+	font-family: Raleway;
+	color: #515151;
+	font-size: 18px;
+	line-height: 26px;
+	margin-top: 20px;
+}
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 0px 0px;
+  width: 100%;
+  background: #000;
+  height: 18px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+.skillbar-bar {
+  height: 9px;
+  width: 0px;
+  background: #ff0000 !important;
+  border-radius: 3px;
+  display: inline-block;
+  top: 4px;
+  left: 5px;
+  position: absolute;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: -8px;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgb(255, 255, 255)!important;
+}
+.skill-bar-item .first-t{
+	font-size: 18px;
+	font-weight: 400;
+	color: #515151;
+	margin-top: 35px;
+	text-transform: capitalize;
+	
+}
+.skill-bar-item .second-t{
+	font-size: 18px;
+	font-weight: 400;
+	color: #515151;
+	margin-top: 20px;
+	text-transform: capitalize;
+	
+}
+.skill-bar-item .last-t{
+	font-size: 18px;
+	font-weight: 400;
+	color: #515151;
+	margin-top: 20px;
+	text-transform: capitalize;
+	
+}
+
+/* ==========skill-area ends========== */
+
+/* ==========video-area starts========== */
+.video-area{
+	overflow: hidden;
+	background: url('images/video-bg.jpg') no-repeat scroll 0 0 / 100% 100%;
+	padding: 120px 0px;
+	text-align: center;
+}
+.video-area h2 {
+    color: #fff;
+    font-size: 39px;
+    font-weight: 900;
+    margin-bottom: 34px;
+}
+.video-area a{
+	border: 3px solid #fff;
+	border-radius: 11px;
+	color: #fff;
+	font-size: 30px;
+	height: 30px;
+	padding: 20px;
+	width: 30px;
+}
+/* ========================video-area ends===================== */
+/* ===================services-area starts here=============== */
+.service-container{
+	width: 70%;
+	margin: auto;
+}
+.services-area{
+	overflow: hidden;
+	padding: 60px 0px 70px;
+	background: #FFF;
+	
+}
+.services-area h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.services-area h2:before{
+	content:'';
+	background: red;
+	height: 2px;
+	width: 156px;
+	position: absolute;
+	top: 100%;
+	left:50%;
+	margin-left: -78px;
+	margin-top: 10px;
+}
+.services-area h2:after{
+	content:'';
+	background: red;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	position: absolute;
+	top: 100%;
+	left:50%;
+	margin-left: -8px;
+	margin-top: 3px;
+}
+.services-area span{
+	color: red;
+}
+.services{
+	margin-top: 55px;
+}
+.single-service{
+	width: 30%;
+	margin-right: 5%;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+}
+.single-service:nth-child(3),.single-service:nth-child(6){
+	margin-right: 0;
+}
+.single-service:nth-child(4),.single-service:nth-child(5),.single-service:nth-child(6){
+	margin-top: 45px;
+}
+.single-service h3{
+	font-size: 28px;
+	color: #252525;
+	margin: 20px 0px;
+	font-weight: 700;
+}
+.single-service p{
+	font-size: 17px;
+	color: #252525;
+	line-height: 21px;
+	
+}
+/* ===================services-area ends here=============== */
+/* ===================counter-area starts here=============== */
+.counter-area{
+	background: url('images/counter-bg.jpg') no-repeat scroll 0 0 / 100% 100%;
+	padding: 120px 0px;
+	overflow: hidden;
+}
+.counter-box{
+	text-align: center;
+	color: #FFF;
+	float: left;
+	overflow: hidden;
+}
+.counter-box:last-child{
+	margin-right: 0;
+}
+.counter-box i{
+	display: block;
+	font-size: 20px;
+	height: 20px;
+	width: 20px;
+	border: 3px solid #FFF;
+	padding: 14px;
+	border-radius: 50%;
+	margin: 0px auto;
+	
+}
+.counter-box span{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: raleway;
+	
+}
+.counter-box p{
+	font-size: 26px;
+	text-transform: capitalize;
+	font-family: raleway;
+	
+}
+/* ====================counter-area ends here=============== */
+
+/* ====================scroll-to-top starts here=============== */
+.scrolltotop {
+	color:#FFFFFF;
+	background:black;
+	padding:10px 20px;
+	border-radius:6px 6px 0 0;
+	font-size:22px;
+	font-weight:bold;
+	position:fixed;
+	right:10px;
+	bottom:0;
+	display:none;
+}
+
+/* ====================scroll-to-top ends here=============== */
+
+
